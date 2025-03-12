@@ -7,3 +7,33 @@ body {
   color: black;
   font-family: Verdana;
 }
+
+.around {
+  border: 1px solid #412722;
+  width: 960px;
+  min-height: 95vh;
+  margin: auto;
+  position: relative;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row1, .row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-column {
+  width: 25%;
+}
+
+.right-column {
+  width: 75%
+}
+
+.wrap {
+  border: 1px solid #412722;
+  margin: 3px;
+  padding: 6px;
+}
