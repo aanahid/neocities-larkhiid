@@ -53,29 +53,48 @@
       </div>
 
       <div class="row3">
+
         <div class="music">
-          <p>song</p>
-          <div class="music-row"> 
-            <iframe class="vid" width="237" height="137" src="https://www.youtube.com/embed/fd6tyv8GowY?si=mkL1rVEMTrEj8zMM&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="scroll-box">
+            <p id="song">
+              This is a continuously scrolling text box that repeats infinitely!
+            </p>
           </div>
+
+          <div class="music-row"> 
+            <div id="youtube-player"></div> 
+            <div class="volume"> 
+              <button id="soundToggle">
+                <img src="assets/music-player/volume.png">
+              </button>
+              <input type="range" id="volume-bar" value="50" min="0" max="100" step="1">
+            </div>
+          </div>
+          <div class="duration"> 
+            <input type="range" id="progress-bar" value="0" min="0" step="0.1">
+          </div>
+
           <div class="buttons">
-            <button>
-              <p>back</p>
+            <button id="prevButton">
+              <img src="assets/music-player/rewind.png">
             </button>
-            <button>
-              <p>play/pause</p>
+            <button id="playButton">
+              <img src="assets/music-player/pause.png">
             </button>
-            <button>
-              <p>shuffle</p>
+            <button id="stopButton">
+              <img src="assets/music-player/stop.png">
             </button>
-            <button>
-              <p>forward</p>
+            <button id="nextButton">
+              <img src="assets/music-player/fast-forward.png">
             </button>
           </div>
         </div>
-      </div>
+
       </div>
 
     </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/music_player.js"></script>
   </body>
 </html>
